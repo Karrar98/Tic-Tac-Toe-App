@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0d1117"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/tic3"
+        app:layout_constraintBottom_toTopOf="@+id/image_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/position_one"
+        android:layout_width="@dimen/widthSize"
+        android:layout_height="@dimen/heightSize"
+        android:layout_marginTop="@dimen/largeMargin"
+        android:layout_marginHorizontal="@dimen/largeMargin"
+        android:onClick="onclickPosition"
+        app:layout_constraintEnd_toStartOf="@+id/position_two"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/image_background" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/position_two"
+        android:layout_width="@dimen/widthSize"
+        android:layout_height="@dimen/heightSize"
+        android:onClick="onclickPosition"
+        app:layout_constraintEnd_toStartOf="@+id/position_three"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/position_one"
+        app:layout_constraintTop_toTopOf="@+id/position_one" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/position_three"
+        android:layout_width="@dimen/widthSize"
+        android:layout_height="@dimen/heightSize"
+        android:onClick="onclickPosition"
+        android:layout_marginHorizontal="@dimen/largeMargin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/position_two"
+        app:layout_constraintTop_toTopOf="@+id/position_one" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/position_four"
+        android:layout_width="@dimen/widthSize"
+        android:layout_height="@dimen/heightSize"
+        android:layout_marginTop="@dimen/largeMargin"
+        android:layout_marginHorizontal="@dimen/largeMargin"
+        android:onClick="onclickPosition"
+        app:layout_constraintEnd_toStartOf="@+id/position_five"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/position_two" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/position_five"
+        android:layout_width="@dimen/widthSize"
+        android:layout_height="@dimen/heightSize"
+        android:onClick="onclickPosition"
+        app:layout_constraintEnd_toStartOf="@+id/position_six"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/position_four"
+        app:layout_constraintTop_toTopOf="@+id/position_four" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/position_six"
+        android:layout_width="@dimen/widthSize"
+        android:layout_height="@dimen/heightSize"
+        android:layout_marginHorizontal="@dimen/largeMargin"
+        android:onClick="onclickPosition"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/position_five"
+        app:layout_constraintTop_toTopOf="@+id/position_five" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/position_seven"
+        android:layout_width="@dimen/widthSize"
+        android:layout_height="@dimen/heightSize"
+        android:layout_marginHorizontal="@dimen/largeMargin"
+        android:onClick="onclickPosition"
+        app:layout_constraintBottom_toBottomOf="@+id/image_background"
+        app:layout_constraintEnd_toStartOf="@+id/position_eight"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/position_five" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/position_eight"
+        android:layout_width="@dimen/widthSize"
+        android:layout_height="@dimen/heightSize"
+        android:onClick="onclickPosition"
+        app:layout_constraintEnd_toStartOf="@+id/position_nine"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/position_seven"
+        app:layout_constraintTop_toTopOf="@+id/position_seven" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/position_nine"
+        android:layout_width="@dimen/widthSize"
+        android:layout_height="@dimen/heightSize"
+        android:onClick="onclickPosition"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="@dimen/largeMargin"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/position_eight"
+        app:layout_constraintTop_toTopOf="@+id/position_eight" />
+
+    <ImageView
+        android:id="@+id/image_background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/tic_tac_toe_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="reset game"
+        android:textSize="18sp"
+        android:padding="@dimen/normalMargin"
+        android:background="@drawable/btn_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_background" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

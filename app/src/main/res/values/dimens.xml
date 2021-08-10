@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="largeMargin">24dp</dimen>
+    <dimen name="widthSize">80dp</dimen>
+    <dimen name="heightSize">100dp</dimen>
+    <dimen name="normalMargin">16dp</dimen>
+</resources>
